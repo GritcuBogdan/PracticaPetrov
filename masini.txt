@@ -1,0 +1,9 @@
+Producator: Ford
+Model: Mustang
+An fabricatie: 2016
+Motor: 3.0
+Combustibil: Benzină
+Numar pasageri: 5
+Nr. inmatriculare: JFG 231
+Pret: 300
+----------------------------------------

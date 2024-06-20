@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.praktika.CarRentController">
+   <children>
+      <AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <ImageView fitHeight="898.0" fitWidth="1486.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/PAWRSH.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="255.0" layoutY="28.0" prefHeight="725.0" prefWidth="820.0" style="-fx-background-color: #1A2130;">
+               <children>
+                  <TableView fx:id="tableView" layoutX="5.0" layoutY="94.0" prefHeight="455.0" prefWidth="820.0">
+                     <columns>
+                        <TableColumn fx:id="producatorCol" prefWidth="123.0" text="Producator" />
+                        <TableColumn fx:id="modelCol" prefWidth="136.0" text="Model" />
+                        <TableColumn fx:id="fabricatieCol" prefWidth="83.0" text="An fabricație" />
+                        <TableColumn fx:id="motorCol" prefWidth="72.0" text="Motor" />
+                        <TableColumn fx:id="combustibilCol" prefWidth="79.0" text="Combustibil" />
+                        <TableColumn fx:id="pasageriCol" prefWidth="78.0" text="Nr.Pasageri" />
+                        <TableColumn fx:id="inmatriculareCol" prefWidth="107.0" text="Nr.înmatriculare" />
+                        <TableColumn fx:id="pretCol" prefWidth="141.0" text="Preț" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="inmatriculareTF" layoutX="263.0" layoutY="641.0" visible="false" />
+                  <Button fx:id="submitButton" layoutX="456.0" layoutY="641.0" mnemonicParsing="false" onAction="#handleDeleteSubmitButtonClicked" prefHeight="25.0" prefWidth="84.0" text="Submit" visible="false" />
+                  <Button fx:id="rentButton" layoutX="42.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleRentButtonClicked" prefHeight="46.0" prefWidth="326.0" text="Închiriază mașină">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="79.0" layoutY="633.0" />
+                  <Button fx:id="repairButton" layoutX="488.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleRepairButtonClicked" prefHeight="46.0" prefWidth="326.0" text="repară mașină">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="inmatriculareLabel" layoutX="56.0" layoutY="638.0" text="Nr.Înmatriculare" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="inmatriculareLabel1" layoutX="66.0" layoutY="648.0" text="Nr.Înmatriculare" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="accesLabel" layoutX="65.0" layoutY="574.0" text="Nr.Înmatriculare" visible="false" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textfield2" layoutX="263.0" layoutY="577.0" visible="false"/>
+                  <Button fx:id="submitButton2" layoutX="462.0" layoutY="577.0" mnemonicParsing="false" text="Submit" visible="false" onAction="#handleDeleteSubmitButtonClicked2"/>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
